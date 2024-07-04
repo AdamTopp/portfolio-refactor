@@ -1,11 +1,15 @@
 import React from 'react'
-import TitleScreen from './TitleScreen/TitleScreen'
+import TitleScreen from './TitleScreen/TitleScreen.component'
+import { StyleProviders } from './Providers/StyleProviders'
 
 function App() {
   return (
-    <div>
-      <TitleScreen />
-    </div>
+    <>
+      <StyleProviders />
+      <main>
+        <TitleScreen />
+      </main>
+    </>
   )
 }
 
