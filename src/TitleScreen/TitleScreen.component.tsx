@@ -5,7 +5,7 @@ function TitleScreen() {
   return (
     <Section>
       <Content>
-        <Navbar>Adam</Navbar>
+        <Navbar />
         <Banner>
           <OutlineText>Hi I'm Adam</OutlineText>
           <MainText>Hi I'm Adam</MainText>

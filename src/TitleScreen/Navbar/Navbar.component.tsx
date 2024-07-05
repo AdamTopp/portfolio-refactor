@@ -1,4 +1,5 @@
-import { Button, Link, Links, Logo, Wrapper } from './Navbar.styles'
+import Language from '../Language/Language.component'
+import { Button, Buttons, Link, Links, Logo, Wrapper } from './Navbar.styles'
 
 function Navbar() {
   return (
@@ -9,7 +10,10 @@ function Navbar() {
         <Link>About</Link>
         <Link>Resume</Link>
       </Links>
-      <Button>Contact</Button>
+      <Buttons>
+        <Language />
+        <Button>Contact</Button>
+      </Buttons>
     </Wrapper>
   )
 }
