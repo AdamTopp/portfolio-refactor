@@ -1,4 +1,4 @@
-import TitleScreen from './TitleScreen/TitleScreen.component'
+import Experience from './pages/Experience/Experience.component'
 import { StyleProviders } from './Providers/StyleProviders'
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
     <>
       <StyleProviders>
         <main>
-          <TitleScreen />
+          <Experience />
         </main>
       </StyleProviders>
     </>

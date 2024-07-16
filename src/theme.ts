@@ -12,7 +12,7 @@ export const Colors = {
 
 export const theme = {
     fonts: {
-        Playfair: 'Playfair Display',
+        Playfair: 'Playfair',
         Anton: 'Anton',
         Comfortaa: 'Comfortaa',
         Nunito: 'Nunito Sans',

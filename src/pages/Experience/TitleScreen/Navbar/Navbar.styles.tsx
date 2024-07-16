@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const Wrapper = styled.nav`
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 24px 16px;
+    padding: 24px 0;
     position: absolute;
     top: 0;
     z-index: 100;
@@ -14,6 +14,8 @@ export const Wrapper = styled.nav`
 export const Logo = styled.div`
     display: flex;
     justify-self: flex-start;
+    position: absolute;
+    left: 16px;
 
     font-size: 2.5rem;
     color: ${(props) => props.theme.colors.white};
@@ -54,6 +56,8 @@ export const Link = styled.div`
 export const Buttons = styled.div`
     display: flex;
     gap: 3rem;
+    position: absolute;
+    right: 16px;
 `;
 
 export const Button = styled.button`
