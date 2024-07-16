@@ -1,4 +1,4 @@
-import { Section, Title, Wrapper, Text, Highlight } from './Introduction.styles'
+import { Section, Title, Wrapper, Text, Highlight, Subtitle } from './Introduction.styles'
 
 function Introduction() {
   return (
@@ -6,6 +6,9 @@ function Introduction() {
       <Wrapper>
         <Title>Who am I?</Title>
         <Text>I'm passionate about creating beautiful products that <Highlight textValue='empower'>empower</Highlight> <Highlight textValue='people'>people</Highlight></Text>
+        <Subtitle>
+          Introduction
+        </Subtitle>
       </Wrapper>
     </Section>
   )

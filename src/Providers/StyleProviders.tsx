@@ -25,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
     & > div {
       max-width: 1600px;
       width: 100%;
+      padding: 0 60px;
     }
   }
 `;
