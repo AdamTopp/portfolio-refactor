@@ -5,9 +5,11 @@ export const Colors = {
     orangeMain: '#FF7502',
     orangeSecondary: '#E4A70D',
     black: '#55575B',
+    lightBlack: 'rgba(0, 0, 0, 0.03)',
     grey: '#D0D0D0',
     darkGrey: '#3b3d414c',
     lightGrey: '#EDEEF1',
+    backgroundGrey: '#FBFBFB',
 };
 
 export const theme = {
