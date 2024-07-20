@@ -20,72 +20,56 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.h2`
-    display: flex;
-    flex-direction: column;
-
+    position: relative;
     text-align: center;
+    white-space: collapse balance;
     font-family: ${({ theme }) => theme.fonts.Nunito};
+    line-height: 1;
     font-size: 3.5rem;
     font-weight: 400;
-    white-space: collapse balance;
 `;
 
-export const Subtitle = styled.h3`
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    margin-top: 2rem;
-    padding: 0.5rem 2rem;
-    border: 3px solid ${({ theme }) => theme.colors.lightGrey};
-    border-radius: 5rem;
-
-    color: ${({ theme }) => theme.colors.grey};
-    font-family: ${({ theme }) => theme.fonts.Nunito};
-    font-size: 2rem;
-    font-weight: 400;
+export const Highlight = styled.i`
+    position: relative;
     text-align: center;
-    background-color: ${({ theme }) => theme.colors.white};
+    width: fit-content;
+    white-space: collapse balance;
+    font-family: ${({ theme }) => theme.fonts.Playfair};
+    color: ${({ theme }) => theme.colors.orangeMain};
+    font-size: 4.25rem;
+    font-weight: 400;
+
+    &::after {
+        content: "";
+        width: 110%;
+        height: 2px;
+        
+        background: ${({ theme }) => theme.colors.orangeMain};
+        
+        position: absolute;
+        left: -5%;
+        bottom: 0;
+        transform: rotate(-2deg);
+    }
 `;
 
 export const Cards = styled.div`
     display: flex;
-    gap: 8px 42px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 64px 42px;
     width: 100%;
     margin: 100px 0;
 `;
 
-export const Card = styled.div<{ number: string }>`
-    flex: 1;
-    position: relative;
-    height: 450px;
-    padding: 30px 20px;
+export const Card = styled.div`
+    padding: 30px;
+    min-width: 300px;
     border: 2px solid ${({ theme }) => theme.colors.lightGrey};
     border-radius: 10px;
     background-color: ${({ theme }) => theme.colors.white};
-    overflow: hidden;
-    z-index: 0;
+    cursor: pointer;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.05);
-
-    &:nth-child(odd) {
-        margin-bottom: 100px;
-    }
-
-    &:nth-child(even) {
-        margin-top: 100px;
-    }
-
-    &::before {
-        content: '${(props) => props.number}';
-        display: inline;
-        position: absolute;
-        top: 0;
-        left: -1.5cqw;
-        line-height: 1;
-        color: ${({ theme }) => theme.colors.lightBlack};
-        font-size: 15cqh;
-        font-family: ${({ theme }) => theme.fonts.Anton};
-        z-index: -1;
-    }
 `;
 
 export const Icon = styled.div`
@@ -98,6 +82,7 @@ export const Icon = styled.div`
 `;
 
 export const CardTitle = styled.div`
+    margin-top: 8px;
     font-family: ${({ theme }) => theme.fonts.Nunito};
     font-size: 2.5rem;
     font-weight: 600;
@@ -119,7 +104,6 @@ export const Vigniette = styled.div`
     max-width: none;
     width: 100%;
     height: 100%;
-    background-color: #ff000036;
     pointer-events: none;
     z-index: 0;
     background: radial-gradient(transparent 60%, ${(props) => props.theme.colors.backgroundGrey} 80%);

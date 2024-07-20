@@ -11,8 +11,7 @@ function Principles() {
     <Section>
       <Vigniette />
       <Wrapper>
-        <Title>Four principles that guide me when</Title>
-        <Title>creating awesome websites</Title>
+        <Title>Four principles that guide me when <br/> creating awesome websites </Title>
         <Subtitle>See what do I prioritize in my work ethic</Subtitle>
         <Cards>
           <Card number='01'>
