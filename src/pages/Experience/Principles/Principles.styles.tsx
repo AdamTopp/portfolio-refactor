@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
+    position: relative;
     display: flex;
     align-items: center;
     padding: 100px 0;
@@ -118,4 +119,16 @@ export const CardSubTitle = styled.div`
     font-size: 2.5rem;
     font-weight: 400;
     line-height: 1;
+`;
+
+export const Vigniette = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: none;
+    width: 100%;
+    height: 100%;
+    background-color: #ff000036;
+    pointer-events: none;
+        background: radial-gradient(transparent 60%, ${(props) => props.theme.colors.backgroundGrey} 80%);
 `;

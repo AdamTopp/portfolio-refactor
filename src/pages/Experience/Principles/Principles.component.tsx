@@ -1,5 +1,5 @@
 import Button from '@components/Button/Button.component';
-import { Card, Cards, CardSubTitle, CardTitle, Icon, Section, Subtitle, Title, Wrapper } from './Principles.styles'
+import { Card, Cards, CardSubTitle, CardTitle, Icon, Section, Subtitle, Title, Vigniette, Wrapper } from './Principles.styles'
 import { Brush, Celebration, Forum, PestControl } from '@mui/icons-material';
 
 function Principles() {
@@ -9,6 +9,7 @@ function Principles() {
 
   return (
     <Section>
+      <Vigniette />
       <Wrapper>
         <Title>Four principles that guide me when</Title>
         <Title>creating awesome websites</Title>
