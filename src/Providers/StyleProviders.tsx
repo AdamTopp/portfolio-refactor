@@ -28,6 +28,11 @@ const GlobalStyle = createGlobalStyle`
       padding: 0 60px;
     }
   }
+
+  ::selection {
+    color: ${({ theme }) => theme.colors.white} !important;
+    background-color: ${({ theme }) => theme.colors.selection};
+  }
 `;
 
 export const StyleProviders = ({ children }: PropsWithChildren) => (

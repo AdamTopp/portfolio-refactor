@@ -38,7 +38,7 @@ export const OutlineText = styled(Text)`
 export const MainText = styled(Text)`
     position: relative;
     font-family: ${(props) => props.theme.fonts.Anton};
-    color: ${(props) => props.theme.colors.lightWhite};
+    color: ${(props) => props.theme.colors.white};
 
     &::before, &::after {
         display: inline-block;

@@ -10,6 +10,7 @@ export const Colors = {
     darkGrey: '#3b3d414c',
     lightGrey: '#EDEEF1',
     backgroundGrey: '#FBFBFB',
+    selection: '#ffd000',
 };
 
 export const theme = {

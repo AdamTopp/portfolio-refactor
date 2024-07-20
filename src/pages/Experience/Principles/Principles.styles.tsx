@@ -10,7 +10,7 @@ export const Section = styled.section`
     background-image: radial-gradient(circle at 50% 50%, #DDDDDD 2px, transparent 0);
     background-size: 70px 70px;
 
-    &::after {
+    /* &::after {
         content: '';
         display: inline;
         position: absolute;
@@ -20,7 +20,7 @@ export const Section = styled.section`
         left: 0;
         pointer-events: none;
         background: radial-gradient(transparent 60%, ${(props) => props.theme.colors.backgroundGrey} 80%);
-    }
+    } */
 `;
 
 export const Wrapper = styled.div`
