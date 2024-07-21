@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-export const Logo = styled.div<{ logoColor?: string }>`
+export const Logo = styled.div<{ $logocolor?: string }>`
     display: flex;
     align-items: center;
     font-size: 2.5rem;
-    color: ${({ logoColor, theme }) => logoColor ? logoColor : theme.colors.black};
-    font-family: ${(props) => props.theme.fonts.Comfortaa};
+    color: ${({ $logocolor, theme }) => $logocolor ? $logocolor : theme.colors.black};
+    font-family: ${({ theme }) => theme.fonts.Comfortaa};
 
-    -webkit-text-stroke: 1px ${({ logoColor, theme }) => logoColor ? logoColor : theme.colors.black};
+    -webkit-text-stroke: 1px ${({ $logocolor, theme }) => $logocolor ? $logocolor : theme.colors.black};
     text-transform: lowercase;
     user-select: none;
     cursor: default;
@@ -15,7 +15,7 @@ export const Logo = styled.div<{ logoColor?: string }>`
     &::after {
         content: '';
         display: inline-block;
-        background-color: ${({ logoColor, theme }) => logoColor ? logoColor : theme.colors.black};
+        background-color: ${({ $logocolor, theme }) => $logocolor ? $logocolor : theme.colors.black};
         height: 1rem;
         aspect-ratio: 1/1;
         border-radius: 50%;

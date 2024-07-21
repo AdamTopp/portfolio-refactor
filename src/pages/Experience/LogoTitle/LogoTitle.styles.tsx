@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Section = styled.section`
     padding: 80px 0;
-    background: linear-gradient(135deg, ${(props) => props.theme.colors.orangeMain} 40%, ${(props) => props.theme.colors.orangeSecondary}  100%);
+    background: linear-gradient(135deg, ${({ theme }) => theme.colors.orangeMain} 40%, ${({ theme }) => theme.colors.orangeSecondary}  100%);
 `;
 
 export const Content = styled.div`
@@ -15,10 +15,9 @@ export const Content = styled.div`
 
 export const Title = styled.div`
     font-size: 17cqw;
-    /* padding: 0; */
     display: flex;
     align-items: start;
-    -webkit-text-stroke: 1.6cqw ${(props) => props.theme.colors.white};
+    -webkit-text-stroke: 1.6cqw ${({ theme }) => theme.colors.white};
     font-family: ${({ theme }) => theme.fonts.Comfortaa};
     color: ${({ theme }) => theme.colors.white};
     text-transform: lowercase;

@@ -7,7 +7,7 @@ export const Section = styled.section`
     padding: 100px 0;
     overflow: hidden;
 
-    background: ${(props) => props.theme.colors.backgroundGrey};
+    background: ${({ theme }) => theme.colors.backgroundGrey};
     background-image: radial-gradient(circle at 50% 50%, #DDDDDD 2px, transparent 0);
     background-size: 70px 70px;
 `;
@@ -54,7 +54,7 @@ export const Cards = styled.div`
     margin: 100px 0;
 `;
 
-export const Card = styled.div<{ number: string }>`
+export const Card = styled.div<{ $number: string }>`
     flex: 1;
     position: relative;
     height: 450px;
@@ -75,7 +75,7 @@ export const Card = styled.div<{ number: string }>`
     }
 
     &::before {
-        content: '${(props) => props.number}';
+        content: '${({ $number }) => $number}';
         display: inline;
         position: absolute;
         top: 0;
@@ -122,5 +122,5 @@ export const Vigniette = styled.div`
     background-color: #ff000036;
     pointer-events: none;
     z-index: 0;
-    background: radial-gradient(transparent 60%, ${(props) => props.theme.colors.backgroundGrey} 80%);
+    background: radial-gradient(transparent 60%, ${({ theme }) => theme.colors.backgroundGrey} 80%);
 `;

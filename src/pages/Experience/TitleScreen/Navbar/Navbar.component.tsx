@@ -24,7 +24,7 @@ function Navbar() {
       </Links>
       <Buttons>
         <Language />
-        <Button label='Contact' onClick={handleClick} minimal small/>
+        <Button label='Contact' onClick={handleClick} simple small/>
       </Buttons>
     </Wrapper>
   )

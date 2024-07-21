@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Section = styled.section`
     min-height: 100vh;
-    background: linear-gradient(135deg, ${(props) => props.theme.colors.orangeMain} 40%, ${(props) => props.theme.colors.orangeSecondary}  100%);
+    background: linear-gradient(135deg, ${({ theme }) => theme.colors.orangeMain} 40%, ${({ theme }) => theme.colors.orangeSecondary}  100%);
 `;
 
 export const Content = styled.div`
@@ -31,14 +31,14 @@ export const Text = styled.div`
 
 export const OutlineText = styled(Text)`
     color: transparent;
-    font-family: ${(props) => props.theme.fonts.Pathway};
-    -webkit-text-stroke: 0.1cqw ${(props) => props.theme.colors.lighterWhite};
+    font-family: ${({ theme }) => theme.fonts.Pathway};
+    -webkit-text-stroke: 0.1cqw ${({ theme }) => theme.colors.lighterWhite};
 `;
 
 export const MainText = styled(Text)`
     position: relative;
-    font-family: ${(props) => props.theme.fonts.Anton};
-    color: ${(props) => props.theme.colors.white};
+    font-family: ${({ theme }) => theme.fonts.Anton};
+    color: ${({ theme }) => theme.colors.white};
 
     &::before, &::after {
         display: inline-block;
@@ -49,8 +49,8 @@ export const MainText = styled(Text)`
         line-height: 1;
         letter-spacing: 0;
         font-size: 3.85cqw;
-        font-family: ${(props) => props.theme.fonts.Playfair};
-        color: ${(props) => props.theme.colors.white};
+        font-family: ${({ theme }) => theme.fonts.Playfair};
+        color: ${({ theme }) => theme.colors.white};
         text-transform: none;
     }
 
@@ -72,7 +72,7 @@ export const Scroll = styled.div`
     bottom: 32px;
     height: 70px;
     width: 40px;
-    border: 2px solid ${(props) => props.theme.colors.white};
+    border: 2px solid ${({ theme }) => theme.colors.white};
     border-radius: 100px;
 
     &::after {
@@ -83,6 +83,6 @@ export const Scroll = styled.div`
         height: 40%;
         aspect-ratio: 1/1;
         border-radius: 50%;
-        background: ${(props) => props.theme.colors.white};
+        background: ${({ theme }) => theme.colors.white};
     }
 `;

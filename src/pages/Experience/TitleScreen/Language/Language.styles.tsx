@@ -5,18 +5,18 @@ export const Wrapper = styled.button`
     align-items: center;
     gap: 0.5rem;
 
-    color: ${(props) => props.theme.colors.white};
+    color: ${({ theme }) => theme.colors.white};
     background: none;
     border: none;
 
     font-size: 1.25rem;
-    font-family: ${(props) => props.theme.fonts.Nunito};
+    font-family: ${({ theme }) => theme.fonts.Nunito};
     cursor: pointer;
 
     svg {
         width: 1.5rem;
         height: 1.5rem;
-        color: ${(props) => props.theme.colors.white};
-        fill: ${(props) => props.theme.colors.white};
+        color: ${({ theme }) => theme.colors.white};
+        fill: ${({ theme }) => theme.colors.white};
     }
 `;

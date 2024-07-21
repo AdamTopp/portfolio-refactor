@@ -1,9 +1,9 @@
 import styled, { css } from "styled-components";
 
-export const ButtonWrapper = styled.button<{ minimal?: boolean, small?: boolean }>`
-    color: ${({ theme, minimal }) => minimal ? theme.colors.black : theme.colors.white};
+export const ButtonWrapper = styled.button<{ $simple?: boolean, $small?: boolean }>`
+    color: ${({ theme, $simple }) => $simple ? theme.colors.black : theme.colors.white};
     font-family: ${({ theme }) => theme.fonts.Nunito};
-    font-size: ${({ small }) => small ? '1.5rem' : '2rem'};
+    font-size: ${({ $small }) => $small ? '1.5rem' : '2rem'};
     border-radius: 10px;
     padding: 10px 32px;
     border: none;
@@ -11,10 +11,10 @@ export const ButtonWrapper = styled.button<{ minimal?: boolean, small?: boolean 
     cursor: pointer;
     transition: all 0.3s;
 
-    ${({ minimal }) => minimal ? css`
+    ${({ $simple }) => $simple ? css`
         background: ${({ theme }) => theme.colors.white};
     ` : css`
-        background: linear-gradient(135deg, ${(props) => props.theme.colors.orangeMain} 40%, ${(props) => props.theme.colors.orangeSecondary}  100%);
+        background: linear-gradient(135deg, ${({ theme }) => theme.colors.orangeMain} 40%, ${({ theme }) => theme.colors.orangeSecondary}  100%);
     `}
 
     &:hover {

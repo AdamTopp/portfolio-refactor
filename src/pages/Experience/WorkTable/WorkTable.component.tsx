@@ -19,7 +19,7 @@ function WorkTable() {
     <Section>
       <Content>
         {data.map((i) => (
-          <Row>
+          <Row key={i.name}>
             <Year>{i.year}</Year>
             <Name>{i.name}</Name>
             <Link href={i.url} target='_blank' rel="noopener noreferrer">learn more</Link>

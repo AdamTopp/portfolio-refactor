@@ -6,8 +6,8 @@ import { theme } from '../theme';
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
-    color: ${(props) => props.theme.colors.black};
-    font-family: ${(props) => props.theme.fonts.Nunito};
+    color: ${({ theme }) => theme.colors.black};
+    font-family: ${({ theme }) => theme.fonts.Nunito};
     cursor: default;
   }
 

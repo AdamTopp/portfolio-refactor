@@ -7,7 +7,7 @@ export const Section = styled.section`
     padding: 100px 0;
     overflow: hidden;
 
-    background: ${(props) => props.theme.colors.backgroundGrey};
+    background: ${({ theme }) => theme.colors.backgroundGrey};
     background-image: radial-gradient(circle at 50% 50%, #DDDDDD 2px, transparent 0);
     background-size: 70px 70px;
 `;
@@ -19,7 +19,7 @@ export const Wrapper = styled.div`
     z-index: 1;
 `;
 
-export const Title = styled.h2`
+export const Title = styled.h3`
     position: relative;
     text-align: center;
     white-space: collapse balance;
@@ -106,5 +106,5 @@ export const Vigniette = styled.div`
     height: 100%;
     pointer-events: none;
     z-index: 0;
-    background: radial-gradient(transparent 60%, ${(props) => props.theme.colors.backgroundGrey} 80%);
+    background: radial-gradient(transparent 60%, ${({ theme }) => theme.colors.backgroundGrey} 80%);
 `;

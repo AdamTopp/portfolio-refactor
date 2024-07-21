@@ -5,7 +5,7 @@ function Introduction() {
     <Section>
       <Wrapper>
         <Title>Who am I?</Title>
-        <Text>I'm passionate about creating beautiful products that <Highlight textValue='empower'>empower</Highlight> <Highlight textValue='people'>people</Highlight></Text>
+        <Text>I'm passionate about creating beautiful products that <Highlight>empower</Highlight> <Highlight>people</Highlight></Text>
         <Subtitle>
           Introduction
         </Subtitle>

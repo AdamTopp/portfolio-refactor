@@ -6,7 +6,7 @@ interface Props {
 
 function Logo({ logoColor }: Props) {
   return (
-    <LogoItem logoColor={logoColor}>adam</LogoItem>
+    <LogoItem $logocolor={logoColor}>adam</LogoItem>
   )
 }
 

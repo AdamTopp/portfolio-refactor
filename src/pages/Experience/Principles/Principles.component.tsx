@@ -2,6 +2,23 @@ import Button from '@components/Button/Button.component';
 import { Card, Cards, CardSubTitle, CardTitle, Icon, Section, Subtitle, Title, Vigniette, Wrapper } from './Principles.styles'
 import { Brush, Celebration, Forum, PestControl } from '@mui/icons-material';
 
+const data = [{
+  icon: <Brush />,
+  title: 'Being unique',
+  subTitle: 'Stand out in style'
+}, {
+  icon: <PestControl />,
+  title: 'Clean code',
+  subTitle: 'No more bugs!'
+}, {
+  icon: <Forum />,
+  title: 'Feedback',
+  subTitle: 'Communication is key'
+}, {
+  icon: <Celebration />,
+  title: 'Having fun!',
+  subTitle: 'Enjoy creativity'
+}]
 function Principles() {
   const handleClick = () => {
     console.log('Click');
@@ -14,34 +31,15 @@ function Principles() {
         <Title>Four principles that guide me when <br/> creating awesome websites </Title>
         <Subtitle>See what do I prioritize in my work ethic</Subtitle>
         <Cards>
-          <Card number='01'>
-            <Icon>
-              <Brush />
-              <CardTitle>Being unique</CardTitle>
-              <CardSubTitle>Stand out in style</CardSubTitle>
-            </Icon>
-          </Card>
-          <Card number='02'>
-            <Icon>
-              <PestControl />
-              <CardTitle>Clean code</CardTitle>
-              <CardSubTitle>No more bugs!</CardSubTitle>
-            </Icon>
-          </Card>
-          <Card number='03'>
-            <Icon>
-              <Forum />
-              <CardTitle>Feedback</CardTitle>
-              <CardSubTitle>Communication is key</CardSubTitle>
-            </Icon>
-          </Card>
-          <Card number='04'>
-            <Icon>
-              <Celebration />
-              <CardTitle>Having fun!</CardTitle>
-              <CardSubTitle>Enjoy creativity</CardSubTitle>
-            </Icon>
-          </Card>
+          {data.map((card, ind) => (
+            <Card $number={`0${ind}`} key={card.title}>
+              <Icon>
+                {card.icon}
+                <CardTitle>{card.title}</CardTitle>
+                <CardSubTitle>{card.subTitle}</CardSubTitle>
+              </Icon>
+            </Card>
+          ))}
         </Cards>
         <Button label='About me' onClick={handleClick}/>
       </Wrapper>

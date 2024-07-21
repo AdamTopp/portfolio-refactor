@@ -40,7 +40,7 @@ function Technologies() {
         <Title>Get to know what technologies <br/> do I use <Highlight>everyday</Highlight></Title>
         <Cards>
           {data.map((i) => (
-            <Card>
+            <Card key={i.title}>
               <Icon>
                 <Brush />
                 <CardTitle>{i.title}</CardTitle>

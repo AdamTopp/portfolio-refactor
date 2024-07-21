@@ -10,7 +10,7 @@ function ContactBanner() {
     <Section>
       <Content>
         <Title>Want to work <br/> toegether?<Highlight>Let’s talk!</Highlight></Title>
-        <Button small label='Give me a call' minimal onClick={handleClick} />
+        <Button small label='Give me a call' simple onClick={handleClick} />
       </Content>
     </Section>
   )

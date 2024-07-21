@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Section = styled.section`
     padding: 80px 0;
-    background: linear-gradient(135deg, ${(props) => props.theme.colors.orangeMain} 40%, ${(props) => props.theme.colors.orangeSecondary}  100%);
+    background: linear-gradient(135deg, ${({ theme }) => theme.colors.orangeMain} 40%, ${({ theme }) => theme.colors.orangeSecondary}  100%);
 `;
 
 export const Content = styled.div`

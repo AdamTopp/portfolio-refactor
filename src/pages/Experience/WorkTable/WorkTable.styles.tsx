@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-    background: ${(props) => props.theme.colors.white};
+    background: ${({ theme }) => theme.colors.white};
 `;
 
 export const Content = styled.div`
@@ -47,7 +47,7 @@ export const Year = styled.span`
         margin-right: 2rem;
         aspect-ratio: 1/1;
         border-radius: 50%;
-        background: linear-gradient(135deg, ${(props) => props.theme.colors.orangeMain} 40%, ${(props) => props.theme.colors.orangeSecondary}  100%);
+        background: linear-gradient(135deg, ${({ theme }) => theme.colors.orangeMain} 40%, ${({ theme }) => theme.colors.orangeSecondary}  100%);
     }
 `;
 

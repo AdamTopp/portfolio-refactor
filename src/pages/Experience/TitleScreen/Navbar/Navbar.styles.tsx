@@ -26,8 +26,8 @@ export const Links = styled.div`
 export const Link = styled.div`
     height: fit-content;
     font-size: 1.25rem;
-    color: ${(props) => props.theme.colors.white};
-    font-family: ${(props) => props.theme.fonts.Comfortaa};
+    color: ${({ theme }) => theme.colors.white};
+    font-family: ${({ theme }) => theme.fonts.Comfortaa};
     cursor: pointer;
 `;
 
