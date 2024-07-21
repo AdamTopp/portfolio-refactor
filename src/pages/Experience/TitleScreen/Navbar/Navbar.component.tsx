@@ -1,10 +1,22 @@
+import Logo from '@/components/Logo/Logo.component'
 import Language from '../Language/Language.component'
-import { Button, Buttons, Link, Links, Logo, Wrapper } from './Navbar.styles'
+import { Buttons, Link, Links, LogoWrapper, Wrapper } from './Navbar.styles'
+import { useContext } from 'react'
+import { ThemeContext } from 'styled-components'
+import Button from '@/components/Button/Button.component'
 
 function Navbar() {
+  const themeContext = useContext(ThemeContext);
+
+  const handleClick = () => {
+    console.log('Click');
+  };
+
   return (
     <Wrapper>
-      <Logo>adam</Logo>
+      <LogoWrapper>
+        <Logo logoColor={themeContext?.colors.white} />
+      </LogoWrapper>
       <Links>
         <Link>Experience</Link>
         <Link>About</Link>
@@ -12,7 +24,7 @@ function Navbar() {
       </Links>
       <Buttons>
         <Language />
-        <Button>Contact</Button>
+        <Button label='Contact' onClick={handleClick} minimal small/>
       </Buttons>
     </Wrapper>
   )

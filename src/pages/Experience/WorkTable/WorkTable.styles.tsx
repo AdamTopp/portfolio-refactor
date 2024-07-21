@@ -9,7 +9,7 @@ export const Content = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 0 20px;
+    padding: 100px 20px;
 `;
 
 export const Row = styled.div`
@@ -17,7 +17,7 @@ export const Row = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 60px 20px;
+    padding: 60px 50px;
     border-bottom: 2px solid ${({ theme }) => theme.colors.lightGrey};
     transition: 0.1s ease-in-out;
     cursor: pointer;

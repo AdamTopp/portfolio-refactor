@@ -8,10 +8,12 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     color: ${(props) => props.theme.colors.black};
     font-family: ${(props) => props.theme.fonts.Nunito};
+    cursor: default;
   }
 
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
+    font-weight: 500;
   }
 
   body, html {
