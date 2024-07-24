@@ -59,7 +59,7 @@ export const Name = styled.span`
     font-family: ${({ theme }) => theme.fonts.Nunito};
 `;
 
-export const Link = styled.a`
+export const Link = styled.div`
     margin-left: auto;
     font-size: 1.25rem;
     font-weight: 700;
