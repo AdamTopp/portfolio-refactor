@@ -10,23 +10,26 @@ export const Section = styled.section`
 export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: fit-content;
 `;
 
 export const Title = styled.h2`
     display: flex;
     align-items: center;
+    width: fit-content;
     margin-bottom: 1rem;
 
-    color: ${({ theme }) => theme.colors.grey};
-    font-size: 2.5rem;
+    color: ${({ theme }) => theme.colors.grey2};
+    font-size: 2.25rem;
     font-weight: 100;
     font-family: ${({ theme }) => theme.fonts.Comfortaa};
 
     &::before {
         content: '';
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 0.85rem;
+        height: 0.85rem;
         margin-right: 16px;
         border-radius: 50%;
         background: linear-gradient(135deg, ${({ theme }) => theme.colors.orangeMain} 40%, ${({ theme }) => theme.colors.orangeSecondary}  100%);
@@ -34,8 +37,9 @@ export const Title = styled.h2`
 `;
 
 export const Text = styled.div`
-    font-size: 4.5rem;
+    font-size: 4rem;
     line-height: 1;
+    width: fit-content;
 `;
 
 export const Highlight = styled.span`
@@ -43,7 +47,7 @@ export const Highlight = styled.span`
 
     line-height: 1;
     color: transparent;
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-weight: 900;
     font-family: ${({ theme }) => theme.fonts.Playfair};
     font-style: italic;
@@ -58,8 +62,8 @@ export const Subtitle = styled.div`
     padding-top: 16px;
     border-top: 2px solid ${({ theme }) => theme.colors.lightGrey};
 
-    color: ${({ theme }) => theme.colors.lightGrey};
-    font-size: 1.5rem;
+    color: ${({ theme }) => theme.colors.grey2};
+    font-size: 1.25rem;
     font-family: ${({ theme }) => theme.fonts.Comfortaa};
     text-align: end;
     text-transform: uppercase;

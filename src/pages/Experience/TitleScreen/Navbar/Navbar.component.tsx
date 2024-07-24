@@ -18,9 +18,9 @@ function Navbar() {
         <Logo logoColor={themeContext?.colors.white} />
       </LogoWrapper>
       <Links>
-        <Link>Experience</Link>
-        <Link>About</Link>
-        <Link>Resume</Link>
+        <Link href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank' rel="noopener noreferrer">Experience</Link>
+        <Link href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank' rel="noopener noreferrer">About</Link>
+        <Link href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank' rel="noopener noreferrer">Resume</Link>
       </Links>
       <Buttons>
         <Language />

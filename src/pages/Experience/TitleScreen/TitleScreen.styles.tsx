@@ -22,7 +22,7 @@ export const Banner = styled.div`
 
 export const Text = styled.div`
     line-height: 0.95;
-    font-size: 21cqw;
+    font-size: 25cqw;
     letter-spacing: -0.5cqw;
     text-transform: uppercase;
     white-space: nowrap;
@@ -48,7 +48,7 @@ export const MainText = styled(Text)`
 
         line-height: 1;
         letter-spacing: 0;
-        font-size: 3.85cqw;
+        font-size: 4.5cqw;
         font-family: ${({ theme }) => theme.fonts.Playfair};
         color: ${({ theme }) => theme.colors.white};
         text-transform: none;
@@ -56,12 +56,12 @@ export const MainText = styled(Text)`
 
     &::before {
         content: 'Do you need a website?';
-        top: -7.5cqw;
+        top: -9cqw;
     }
 
     &::after {
         content: 'Let me help!';
-        bottom: -7.5cqw;
+        bottom: -9cqw;
     }
 `;
 

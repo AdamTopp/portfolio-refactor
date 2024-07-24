@@ -5,10 +5,10 @@ function Introduction() {
     <Section>
       <Wrapper>
         <Title>Who am I?</Title>
-        <Text>I'm passionate about creating beautiful products that <Highlight>empower</Highlight> <Highlight>people</Highlight></Text>
-        <Subtitle>
+        <Text>I'm passionate about creating beautiful <br/>products that <Highlight>empower</Highlight> <Highlight>people</Highlight><Subtitle>
           Introduction
-        </Subtitle>
+        </Subtitle></Text>
+        
       </Wrapper>
     </Section>
   )

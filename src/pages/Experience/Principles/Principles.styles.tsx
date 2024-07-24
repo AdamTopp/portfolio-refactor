@@ -19,18 +19,17 @@ export const Wrapper = styled.div`
     z-index: 1;
 `;
 
-export const Title = styled.h2`
+export const Title = styled.h3`
     display: flex;
     flex-direction: column;
 
     text-align: center;
     font-family: ${({ theme }) => theme.fonts.Nunito};
-    font-size: 3.5rem;
     font-weight: 400;
     white-space: collapse balance;
 `;
 
-export const Subtitle = styled.h3`
+export const Subtitle = styled.h4`
     display: flex;
     flex-direction: column;
     width: fit-content;
@@ -41,7 +40,7 @@ export const Subtitle = styled.h3`
 
     color: ${({ theme }) => theme.colors.grey};
     font-family: ${({ theme }) => theme.fonts.Nunito};
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 400;
     text-align: center;
     background-color: ${({ theme }) => theme.colors.white};
@@ -57,7 +56,7 @@ export const Cards = styled.div`
 export const Card = styled.div<{ $number: string }>`
     flex: 1;
     position: relative;
-    height: 450px;
+    aspect-ratio: 4/6;
     padding: 30px 20px;
     border: 2px solid ${({ theme }) => theme.colors.lightGrey};
     border-radius: 10px;
@@ -65,6 +64,7 @@ export const Card = styled.div<{ $number: string }>`
     overflow: hidden;
     z-index: 0;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.05);
+    container-type: inline;
 
     &:nth-child(odd) {
         margin-bottom: 100px;
@@ -82,7 +82,7 @@ export const Card = styled.div<{ $number: string }>`
         left: -1.5cqw;
         line-height: 1;
         color: ${({ theme }) => theme.colors.lightBlack};
-        font-size: 15cqh;
+        font-size: 7.5cqw;
         font-family: ${({ theme }) => theme.fonts.Anton};
         z-index: -1;
     }
@@ -92,14 +92,14 @@ export const Icon = styled.div`
     svg {
         color: ${({ theme }) => theme.colors.orangeMain};
         fill: ${({ theme }) => theme.colors.orangeMain};
-        font-size: 4rem;
+        font-size: 3rem;
         z-index: 1;
     }
 `;
 
 export const CardTitle = styled.div`
     font-family: ${({ theme }) => theme.fonts.Nunito};
-    font-size: 2.5rem;
+    font-size: 1.85rem;
     font-weight: 600;
     line-height: 1;
 `;
@@ -107,7 +107,7 @@ export const CardTitle = styled.div`
 export const CardSubTitle = styled.div`
     font-family: ${({ theme }) => theme.fonts.Playfair};
     color: ${({ theme }) => theme.colors.darkGrey};
-    font-size: 2.5rem;
+    font-size: 1.85rem;
     font-weight: 400;
     line-height: 1;
 `;

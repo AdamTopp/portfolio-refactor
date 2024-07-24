@@ -3,15 +3,15 @@ import { Content, LastLink, Link, Name, Row, Section, Year } from './WorkTable.s
 const data = [{
   year: 2021,
   name: 'Adam Mickiewicz University',
-  url: 'https://www.youtube.com/watch?v=1LBnoCkqmQs&list=PL28oZ4FVZmk7ylJsb0xF26179_iu64OaF&index=2'
+  url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 }, {
   year: 2022,
   name: 'SNP Poland sp. zoo - Internship',
-  url: 'https://www.youtube.com/watch?v=1LBnoCkqmQs&list=PL28oZ4FVZmk7ylJsb0xF26179_iu64OaF&index=2'
+  url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 }, {
   year: 2022,
   name: 'All for One sp. zoo',
-  url: 'https://www.youtube.com/watch?v=1LBnoCkqmQs&list=PL28oZ4FVZmk7ylJsb0xF26179_iu64OaF&index=2'
+  url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 }];
 
 function WorkTable() {
@@ -19,10 +19,10 @@ function WorkTable() {
     <Section>
       <Content>
         {data.map((i) => (
-          <Row key={i.name}>
+          <Row key={i.name} href={i.url} target='_blank' rel="noopener noreferrer">
             <Year>{i.year}</Year>
             <Name>{i.name}</Name>
-            <Link href={i.url} target='_blank' rel="noopener noreferrer">learn more</Link>
+            <Link>learn more</Link>
           </Row>
         ))}
         <Row>

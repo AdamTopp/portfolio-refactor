@@ -14,7 +14,7 @@ export const VersionSection = styled.section`
 
 export const Version = styled.div`
     color: ${({ theme }) => theme.colors.grey};
-    font-size: 1.15rem;
+    font-size: 1rem;
 `;
 
 export const Content = styled.div`
@@ -40,10 +40,13 @@ export const LogoWrapper = styled.div`
 
 export const Title = styled.h4`
     color: ${({ theme }) => theme.colors.grey};
-    font-size: 1.25rem;
+    font-size: 1.15rem;
 `;
 
 export const Link = styled.a`
-    font-size: 1.5rem;
-    cursor: pointer;
+    font-size: 1.15rem;
+
+    &, & * {
+        cursor: pointer;
+    }
 `;

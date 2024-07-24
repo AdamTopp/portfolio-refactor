@@ -9,7 +9,7 @@ export const Wrapper = styled.button`
     background: none;
     border: none;
 
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-family: ${({ theme }) => theme.fonts.Nunito};
     cursor: pointer;
 

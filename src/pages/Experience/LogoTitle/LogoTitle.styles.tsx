@@ -11,10 +11,11 @@ export const Content = styled.div`
     flex-direction: column;
     align-items: center;
     width: fit-content;
+    overflow: hidden;
 `;
 
 export const Title = styled.div`
-    font-size: 17cqw;
+    font-size: 13cqw;
     display: flex;
     align-items: start;
     -webkit-text-stroke: 1.6cqw ${({ theme }) => theme.colors.white};
@@ -24,7 +25,7 @@ export const Title = styled.div`
     white-space: nowrap;
     user-select: none;
     overflow: hidden;
-    height: 12.5cqw;
+    height: 9.25cqw;
     letter-spacing: 0.5cqw;
     text-align: center;
     max-width: fit-content;

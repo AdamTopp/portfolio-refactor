@@ -1,6 +1,6 @@
 import Button from '@components/Button/Button.component';
 import { Card, Cards, CardSubTitle, CardTitle, Icon, Section, Title, Vigniette, Wrapper, Highlight } from './Technologies.styles'
-import { Brush } from '@mui/icons-material';
+import { GTranslate } from '@mui/icons-material';
 
 const data = [{
   icon: '',
@@ -42,7 +42,7 @@ function Technologies() {
           {data.map((i) => (
             <Card key={i.title}>
               <Icon>
-                <Brush />
+                <GTranslate />
                 <CardTitle>{i.title}</CardTitle>
                 <CardSubTitle>{i.desc}</CardSubTitle>
               </Icon>

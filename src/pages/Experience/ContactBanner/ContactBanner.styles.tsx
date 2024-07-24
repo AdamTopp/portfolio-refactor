@@ -13,14 +13,13 @@ export const Content = styled.div`
     width: fit-content;
 `;
 
-export const Title = styled.h2`
+export const Title = styled.h3`
     margin-bottom: 2rem;
     text-align: center;
     white-space: collapse balance;
     font-family: ${({ theme }) => theme.fonts.Nunito};
     color: ${({ theme }) => theme.colors.white};
     line-height: 1;
-    font-size: 3.5rem;
     font-weight: 400;
     cursor: default;
 `;
@@ -32,6 +31,4 @@ export const Highlight = styled.i`
     white-space: collapse balance;
     font-family: ${({ theme }) => theme.fonts.Playfair};
     color: ${({ theme }) => theme.colors.white};
-    font-size: 4.25rem;
-    font-weight: 400;
 `;

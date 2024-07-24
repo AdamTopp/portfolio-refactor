@@ -16,8 +16,18 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 500;
   }
 
+  h3 {
+    font-size: 2.75rem;
+  }
+
+  i {
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+
   body, html {
     all: unset;
+    font-size: 14px;
   }
 
   section {
@@ -25,10 +35,14 @@ const GlobalStyle = createGlobalStyle`
     justify-content: center;
     
     & > div {
-      max-width: 1600px;
+      max-width: 1250px;
       width: 100%;
       padding: 0 60px;
     }
+  }
+
+  a {
+    text-decoration: none;
   }
 
   ::selection {

@@ -5,7 +5,7 @@ export const Wrapper = styled.nav`
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 24px 0;
+    padding: 32px 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -23,9 +23,9 @@ export const Links = styled.div`
     height: fit-content;
 `;
 
-export const Link = styled.div`
+export const Link = styled.a`
     height: fit-content;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     color: ${({ theme }) => theme.colors.white};
     font-family: ${({ theme }) => theme.fonts.Comfortaa};
     cursor: pointer;

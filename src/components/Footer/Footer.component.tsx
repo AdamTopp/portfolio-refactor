@@ -11,19 +11,19 @@ function Footer() {
       <Section>
         <Content>
           <LogoWrapper>
-            <Logo logoColor={themeContext?.colors.grey} />
+            <Logo logoColor={themeContext?.colors.grey2} />
           </LogoWrapper>
           <Columns>
             <Column>
               <Title>Pages</Title>
-              <Link>Experience</Link>
-              <Link>About me</Link>
+              <Link href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank' rel="noopener noreferrer">Experience</Link>
+              <Link href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank' rel="noopener noreferrer">About me</Link>
             </Column>
             <Column>
               <Title>External</Title>
-              <Link>Linked In</Link>
-              <Link>Instagram</Link>
-              <Link>Resume</Link>
+              <Link href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank' rel="noopener noreferrer">Linked In</Link>
+              <Link href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank' rel="noopener noreferrer">Instagram</Link>
+              <Link href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank' rel="noopener noreferrer">Resume</Link>
             </Column>
           </Columns>
         </Content>
