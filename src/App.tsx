@@ -1,11 +1,17 @@
-import React from 'react'
-import TitleScreen from './TitleScreen/TitleScreen'
+import Footer from '@components/Footer/Footer.component';
+import Experience from './pages/Experience/Experience.component';
+import { StyleProviders } from './Providers/StyleProviders';
 
 function App() {
   return (
-    <div>
-      <TitleScreen />
-    </div>
+    <>
+      <StyleProviders>
+        <main>
+          <Experience />
+        </main>
+        <Footer />
+      </StyleProviders>
+    </>
   )
 }
 
